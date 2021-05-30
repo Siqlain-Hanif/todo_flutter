@@ -150,6 +150,10 @@ class AppTheme {
     );
   }
 
+  static TextStyle getGreyTextStyle(context) => Theme.of(context)
+      .textTheme
+      .bodyText1
+      .copyWith(color: Colors.grey.shade700);
   static const MaterialColor primaryColorSwatch =
       MaterialColor(0xFF1c1c1e, swatch);
   // const MaterialColor(0xFFf11771, swatch);
